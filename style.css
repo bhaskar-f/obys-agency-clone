@@ -13,11 +13,23 @@
   box-sizing: border-box;
   font-family: "Plain Light";
   color: #fff;
+  /* cursor: none; */
 }
 body,
 html {
   height: 100%;
   width: 100%;
+}
+#crsr {
+  height: 3vw;
+  width: 3vw;
+  border-radius: 50%;
+  /* background-color: #fff; */
+  border: 1px solid rgba(255, 255, 255, 0.738);
+  position: fixed;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
 }
 #loader {
   height: 100%;
@@ -82,6 +94,8 @@ html {
   position: relative;
   top: 5vw;
   left: 21vw;
+  font-weight: 100;
+  font-family: "Plain light";
 }
 #main {
   position: relative;
@@ -119,4 +133,45 @@ html {
     color: #030303;
     opacity: 0;
   }
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5vw 4.5vw;
+}
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2.8vw;
+}
+#nav-part2 h5 {
+  font-size: 1.1vw;
+  font-weight: 100;
+}
+.hero {
+  /* background-color: red; */
+  width: 72%;
+  margin-left: 27%;
+  overflow: hidden;
+  position: relative;
+  z-index: 99999;
+}
+.hero:nth-child(2) {
+  margin-top: 5vw;
+}
+.hero h1 {
+  font-size: 7.6vw;
+  text-transform: uppercase;
+  line-height: 7.6vw;
+  font-weight: 600;
+}
+#hero3 {
+  display: flex;
+}
+#hero3 h1:hover {
+  -webkit-text-stroke: 1px #fff;
+  /* font-weight: ; */
+  color: transparent;
 }
