@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Plain Light";
+  src: url(plain-light-webfont.ttf);
+}
+@font-face {
+  font-family: "Silk Serif";
+  src: url(silkserif-lightitalic-webfont.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plain Light";
+  color: #fff;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #030303;
+  padding: 14vh 5.5vw;
+}
+#nums {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+#o {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+  margin-left: 4vw;
+}
+#o h5,
+#o h6 {
+  font-size: 3.5vw;
+  font-weight: 100;
+  font-family: "Silk Serif";
+}
+#o h5 {
+  /* background-color: red; */
+  width: 5vw;
+  text-align: end;
+}
+.line {
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2vw;
+}
+.line h1 {
+  font-size: 6.6vw;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.line h2 {
+  font-size: 6.6vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  /* animation-name: blink; */
+  opacity: 0;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+.line:last-child {
+  /* background-color: red; */
+  height: 16vh;
+}
+#little-text {
+  font-size: 1.6vw;
+  position: relative;
+  top: 5vw;
+  left: 21vw;
+}
+#main {
+  position: relative;
+  background-color: #030303;
+}
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #151515;
+}
+@keyframes blink {
+  0% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    opacity: 1;
+  }
+  48% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    opacity: 0;
+  }
+  50% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 100;
+    color: #030303;
+    opacity: 1;
+  }
+  100% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 100;
+    color: #030303;
+    opacity: 0;
+  }
+}
