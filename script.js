@@ -56,6 +56,5 @@ function cursorAnimation() {
       top: dets.y,
     });
   });
-  Shery.makeMagnet("#nav-part2 h5", {});
 }
 cursorAnimation();
